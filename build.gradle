@@ -15,6 +15,7 @@ group "example.micronaut"
 repositories {
     mavenCentral()
     maven { url "https://jcenter.bintray.com" }
+    maven { url "https://dl.bintray.com/spekframework/spek-dev" }
 }
 
 dependencyManagement {
@@ -45,6 +46,9 @@ dependencies {
     testCompile "org.jetbrains.spek:spek-api:1.1.5"
     testRuntime "org.junit.jupiter:junit-jupiter-engine"
     testRuntime "org.jetbrains.spek:spek-junit-platform-engine:1.1.5"
+    testImplementation "org.jetbrains.kotlin:kotlin-test:$kotlinVersion"
+    testImplementation "org.spekframework.spek2:spek-dsl-jvm:$spekVersion"
+    testRuntimeOnly "org.spekframework.spek2:spek-runner-junit5:$spekVersion"
 }
 
 test.classpath += configurations.developmentOnly
@@ -63,7 +67,9 @@ run.classpath += configurations.developmentOnly
 run.jvmArgs('-noverify', '-XX:TieredStopAtLevel=1', '-Dcom.sun.management.jmxremote')
 
 test {
-    useJUnitPlatform()
+    useJUnitPlatform {
+        includeEngines 'spek2'
+    }
 }
 
 allOpen {
