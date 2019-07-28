@@ -14,7 +14,7 @@ $ ./gradlew run
 
 ```
 
-* After runnng the commands, open your browser on address http://localhost:8000/hello
+* After running the commands, open your browser on address http://localhost:8000/hello
 
 
 #### Attention ####
