@@ -24,3 +24,6 @@ $ ./gradlew run
 ```bash
 $ ./gradlew build &&  java -jar -Xmx10m ./build/libs/name-of-file-generated.jar
 ``` 
+
+
+To more info look the [docs of micronaut](https://docs.micronaut.io/1.2.0.RC2/guide/index.html#creatingServer)
