@@ -1,3 +1,16 @@
 micronaut:
   application:
-    name: complete
+    name: poc-micronaut
+  server:
+    port: 8080
+
+
+postgres:
+  reactive:
+    client:
+      port: 5432
+      host: localhost
+      database: postgres
+      user: postgres
+      password: postgres
+      maxSize: 5
