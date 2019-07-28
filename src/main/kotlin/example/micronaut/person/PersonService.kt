@@ -4,7 +4,7 @@ package example.micronaut.person
 import io.reactiverse.pgclient.PgPoolOptions
 import io.reactiverse.reactivex.pgclient.PgClient
 import io.reactiverse.reactivex.pgclient.PgPool
-import java.util.*
+import java.util.LinkedList
 import javax.inject.Singleton
 
 @Singleton
