@@ -19,7 +19,7 @@ $ ./gradlew run
 
 #### Attention ####
 
-* This application is possible to run using only 10m of memory, to make this run the command below:
+* This application is possible to run using only **10mb** of memory, to make this run the command below:
 
 ```bash
 $ ./gradlew build &&  java -jar -Xmx10m ./build/libs/name-of-file-generated.jar
