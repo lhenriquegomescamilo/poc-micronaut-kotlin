@@ -27,7 +27,7 @@ $ ./gradlew build &&  java -jar -Xmx10m ./build/libs/name-of-file-generated.jar
 
 
 ### Example of message to send to server
-* POST -> Creating persons
+* **POST** -> Creating persons
 ```bash
 curl -X POST \
   http://localhost:8080/persons \
@@ -39,7 +39,7 @@ curl -X POST \
 }'
 ```
 
-* GET -> retrieve all persons 
+* **GET** -> retrieve all persons 
 ```bash
 curl -X GET \
   http://localhost:8080/persons \
